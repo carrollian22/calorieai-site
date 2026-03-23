@@ -38,39 +38,83 @@
         .tagline {
             font-size: 18px;
             color: #8E8E8E;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
         .description {
             font-size: 16px;
             line-height: 1.6;
             color: #666666;
+            margin-bottom: 36px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: background 0.2s;
+            margin-bottom: 12px;
+        }
+        .download-btn:hover {
+            background: #333333;
+        }
+        .download-btn svg {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .available-on {
+            font-size: 13px;
+            color: #8E8E8E;
             margin-bottom: 40px;
+        }
+        .features {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .feature {
+            flex: 1;
+            padding: 16px 12px;
+            background: #F8FFFE;
+            border-radius: 12px;
+        }
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .feature-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2D2D2D;
+            margin-bottom: 4px;
+        }
+        .feature-desc {
+            font-size: 12px;
+            color: #8E8E8E;
+            line-height: 1.4;
         }
         .links {
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 12px;
             margin-bottom: 32px;
         }
         .link {
             display: inline-block;
-            background: #2A9D8F;
-            color: white;
+            background: #F0FAF9;
+            color: #2A9D8F;
             text-decoration: none;
-            padding: 16px 32px;
+            padding: 14px 32px;
             border-radius: 12px;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 15px;
             transition: background 0.2s;
         }
         .link:hover {
-            background: #248276;
-        }
-        .link.secondary {
-            background: #F0FAF9;
-            color: #2A9D8F;
-        }
-        .link.secondary:hover {
             background: #E0F5F2;
         }
         .footer {
@@ -97,6 +141,10 @@
             .tagline {
                 font-size: 16px;
             }
+            .features {
+                flex-direction: column;
+                gap: 12px;
+            }
         }
     </style>
 </head>
@@ -105,13 +153,38 @@
         <h1>CalorieAI</h1>
         <p class="tagline">Food and Macro Log</p>
         <p class="description">
-            Track your nutrition with AI-powered food logging. Get personalized calorie targets,
-            macro breakdowns, and insights to reach your goals—whether you're losing, maintaining, or gaining weight.
+            Track your nutrition with AI-powered food logging. Just type what you ate and get instant calorie and macro estimates. Personalized targets, weight tracking, and AI coaching to reach your goals.
         </p>
+        <a href="https://apps.apple.com/us/app/calorieai-food-and-macro-log/id6759179104" class="download-btn">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="white">
+                <path d="M16.52 12.76c-.03-3.02 2.46-4.47 2.57-4.54-1.4-2.05-3.58-2.33-4.36-2.36-1.85-.19-3.62 1.09-4.56 1.09-.95 0-2.42-1.07-3.98-1.04-2.05.03-3.93 1.19-4.99 3.03-2.13 3.69-.54 9.16 1.53 12.15 1.01 1.47 2.22 3.11 3.81 3.05 1.53-.06 2.11-.99 3.96-.99 1.85 0 2.37.99 3.99.96 1.65-.03 2.68-1.49 3.68-2.97 1.16-1.7 1.64-3.35 1.67-3.43-.04-.02-3.2-1.23-3.23-4.88l-.09-.07zM13.52 3.42C14.35 2.41 14.91.99 14.76 0c-1.23.05-2.72.82-3.6 1.86-.79.91-1.48 2.37-1.3 3.77 1.38.11 2.78-.7 3.66-2.21z"/>
+            </svg>
+            Download on the App Store
+        </a>
+        <p class="available-on">Available on iPhone</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">&#x1F50D;</div>
+                <div class="feature-title">AI Food Logging</div>
+                <div class="feature-desc">Type anything, get instant nutrition estimates</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#x1F4CA;</div>
+                <div class="feature-title">Macro Tracking</div>
+                <div class="feature-desc">Protein, carbs, and fat breakdown</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#x1F3AF;</div>
+                <div class="feature-title">Smart Goals</div>
+                <div class="feature-desc">Personalized calorie targets for your goal</div>
+            </div>
+        </div>
+
         <div class="links">
             <a href="mailto:support@calorieai.us" class="link">Contact Support</a>
-            <a href="/privacy.html" class="link secondary">Privacy Policy</a>
-            <a href="/terms.html" class="link secondary">Terms of Service</a>
+            <a href="/privacy.html" class="link">Privacy Policy</a>
+            <a href="/terms.html" class="link">Terms of Service</a>
         </div>
         <div class="footer">
             <a href="mailto:support@calorieai.us">support@calorieai.us</a>
